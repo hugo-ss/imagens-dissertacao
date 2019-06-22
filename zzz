@@ -1,0 +1,11 @@
+#!/bin/bash
+
+npts=625
+npts2=624
+
+# Export .asc
+# sfdisfil > ascii/post.asc col=$npts format="%3.5f " number=n < post.rsf
+# sfdisfil > ascii/line1.asc col=$npts format="%3.5f " number=n < line1.rsf
+# sfdisfil > ascii/post3.asc col=$npts2 format="%3.5f " number=n < post3.rsf
+
+sfdisfil > ascii/data2d.asc col=$npts format="%3.20f " number=n < data2d.rsf
